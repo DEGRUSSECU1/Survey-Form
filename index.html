@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Survey Form</title>
 </head>
-<body>
+    <body>
+        
+    <div class="container"></div>
+    <header class="header">
     <h1 id="title">Hotel Feedback Survey</h1>
+    
     <p id="description">We would like to know how satisfied are you regarding your experience in our hotel. We will use the responses to improve our hotel .</p>
+    </header>
     <form id="survey-form">
         <div class="form-group">
             <label id="room-number" for="number">Hotel Room</label>
@@ -20,6 +26,16 @@
             min="1"
             class="form-control"
             placeholder="Number" required
+            />
+            
+        </div>
+        <div class="form-group">
+            <label id="Name" for="Name">Name</label>
+            <input
+            type="text"
+            id="Name"
+            class="form-control"
+            placeholder="Enter your name" required
             />
         </div>
         <div class="form-group">
@@ -44,11 +60,11 @@
                 <p>Where did you find the information about us?</p>
                 <select id="dropdown" name="source" class="form-control">
                     <option disabled selected value>Select where you hear about us</option>
-                    <option value="social media">Facebook</option>
-                    <option value="social media">Instagram</option>
-                    <option value="social media">Tiktok</option>
-                    <option value="television">Tv propaganda</option>
-                    <option value="radio">Local Radio</option>
+                    <option value="media">Facebook</option>
+                    <option value="media">Instagram</option>
+                    <option value="media">Tiktok</option>
+                    <option value="media">Tv propaganda</option>
+                    <option value="media">Local Radio</option>
                     <option value="other">Other</option>
                 </select>
          </div>
@@ -347,9 +363,8 @@
                   Submit
                 </button>
               </div>
-
-    
-
-    </form>
-</body>
+            </form>
+        </div>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>    
 </html> 
